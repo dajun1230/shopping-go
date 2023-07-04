@@ -1,0 +1,35 @@
+# jwt configuration
+jwt:
+  signing-key: qmPlus
+  expires-time: 7d
+  buffer-time: 1d
+  issuer: qmPlus
+
+# zap logger configuration
+zap:
+  level: info
+  format: console
+  prefix: "[github.com/flipped-aurora/gin-vue-admin/server]"
+  director: log
+  show-line: true
+  encode-level: LowercaseColorLevelEncoder
+  stacktrace-key: stacktrace
+  log-in-console: true
+
+# mysql connect configuration
+mysql:
+  path: ""
+  port: ""
+  config: ""
+  db-name: ""
+  username: ""
+  password: ""
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: ""
+  log-zap: false
+
+# system configuration
+system:
+  # 路由迁居前缀
+router-prefix: ""

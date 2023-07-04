@@ -1,0 +1,20 @@
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:33:06.699	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:38:21.631	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:38:55.862	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:39:12.729	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:40:19.241	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:42:00.227	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:51:08.468	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:52:55.699	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 22:56:16.985	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:00:47.366	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:01:00.455	error	register table failed	{"error": "invalid field found for struct shopping-go/system.SysUser's field Authority: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:01:22.922	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:01:42.468	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:07:35.130	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:09:28.945	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:09:48.513	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:10:51.737	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:12:00.759	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:12:07.891	error	register table failed	{"error": "invalid field found for struct shopping-go/system.SysUser's field Authority: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+[github.com/flipped-aurora/gin-vue-admin/server]2023/07/04 - 23:12:50.839	error	register table failed	{"error": "Error 1215 (HY000): Cannot add foreign key constraint"}
