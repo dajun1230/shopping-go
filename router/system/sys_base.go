@@ -1,8 +1,9 @@
 package system
 
 import (
-	"github.com/gin-gonic/gin"
 	"shopping-go/api"
+
+	"github.com/gin-gonic/gin"
 )
 
 type BaseRouter struct {
@@ -10,7 +11,7 @@ type BaseRouter struct {
 
 func (s *BaseRouter) InitBaseRouter(Router *gin.RouterGroup) {
 	baseApi := api.ApiRouterGroup.System.BaseApi
-	baseRouter := Router.Group("api")
+	baseRouter := Router.Group("base")
 	{
 		baseRouter.POST("login", baseApi.Login)
 		baseRouter.POST("captcha", baseApi.Captcha)

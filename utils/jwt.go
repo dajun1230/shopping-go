@@ -2,10 +2,11 @@ package utils
 
 import (
 	"errors"
-	jwt "github.com/golang-jwt/jwt/v4"
 	"shopping-go/global"
 	"shopping-go/model/system/request"
 	"time"
+
+	jwt "github.com/golang-jwt/jwt/v4"
 )
 
 type JWT struct {

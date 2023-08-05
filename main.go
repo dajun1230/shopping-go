@@ -1,10 +1,13 @@
 package main
 
 import (
-	"go.uber.org/zap"
+	"encoding/json"
+	"fmt"
 	"shopping-go/core"
 	"shopping-go/global"
 	"shopping-go/initialize"
+
+	"go.uber.org/zap"
 )
 
 func main() {
@@ -12,8 +15,10 @@ func main() {
 	global.SHOP_VP = core.Viper()
 
 	// 查看配置文件
-	//data, _ := json.Marshal(global.SHOP_CONFIG)
-	//fmt.Println("配置文件Config:", string(data))
+	data, _ := json.Marshal(global.SHOP_CONFIG)
+	fmt.Println("配置文件Config:", string(data))
+
+	initialize.OtherInit()
 
 	// 初始化zap
 	global.SHOP_LOG = core.Zap()

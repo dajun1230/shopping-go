@@ -1,10 +1,11 @@
 package initialize
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"shopping-go/global"
 	"shopping-go/router"
+
+	"github.com/gin-gonic/gin"
 )
 
 func Routers() *gin.Engine {

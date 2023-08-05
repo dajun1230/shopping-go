@@ -1,13 +1,15 @@
 package system
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/mojocn/base64Captcha"
-	"go.uber.org/zap"
+	"fmt"
 	"shopping-go/global"
 	response "shopping-go/model/common"
 	systemRes "shopping-go/model/system/response"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	"github.com/mojocn/base64Captcha"
+	"go.uber.org/zap"
 )
 
 // 当开启多服务器部署时，替换下面的配置，使用redis共享存储验证码
@@ -27,6 +29,7 @@ func (b *BaseApi) Captcha(c *gin.Context) {
 	openCaptcha := global.SHOP_CONFIG.Captcha.OpenCaptcha               // 是否开启防爆次数
 	openCaptchaTimeOut := global.SHOP_CONFIG.Captcha.OpenCaptchaTimeOut // 缓存超时时间
 	key := c.ClientIP()
+	fmt.Println("当前key：" + key)
 	v, ok := global.BlackCache.Get(key)
 	if !ok {
 		global.BlackCache.Set(key, 1, time.Second*time.Duration(openCaptchaTimeOut))
