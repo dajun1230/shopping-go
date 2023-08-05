@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm/schema"
 	"os"
 	"shopping-go/global"
-	"shopping-go/system"
+	system2 "shopping-go/model/system"
 )
 
 func Gorm() *gorm.DB {
@@ -46,9 +46,9 @@ func RegisterTables() {
 		//system.SysUser{},
 		//system.SysAuthority{},
 		//system.SysBaseMenu{},
-		system.SysUser{},
+		system2.SysUser{},
 		//system.SysBaseMenu{},
-		system.SysAuthority{},
+		system2.SysAuthority{},
 		//system.SysBaseMenuParameter{},
 		//system.SysBaseMenuBtn{},
 	)

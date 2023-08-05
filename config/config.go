@@ -15,4 +15,6 @@ type Config struct {
 
 	// system
 	System System `mapStructure:"system" json:"system" yaml:"system"`
+
+	Captcha Captcha `mapStructure:"captcha" json:"captcha" yaml:"captcha"`
 }

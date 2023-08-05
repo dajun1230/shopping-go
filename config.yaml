@@ -16,6 +16,12 @@ zap:
   stacktrace-key: stacktrace
   log-in-console: true
 
+# redis configuration
+redis:
+  db: 0
+  addr: 127.0.0.1:6379
+  password: ""
+
 # mysql connect configuration
 mysql:
   path: ""
@@ -32,4 +38,12 @@ mysql:
 # system configuration
 system:
   # 路由迁居前缀
-router-prefix: ""
+  router-prefix: ""
+
+# captcha configuration
+captcha:
+  key-long: 6
+  img-width: 240
+  img-height: 80
+  open-captcha: 0 # 0代表一直开启，大于0代表限制次数
+  open-captcha-timeout: 3600 # open-captcha大于0时才生效

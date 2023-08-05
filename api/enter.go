@@ -2,8 +2,8 @@ package api
 
 import "shopping-go/api/system"
 
-type RouterGroup struct {
-	System system.RouterGroup
+type ApiGroup struct {
+	System system.ApiGroup
 }
 
-var ApiRouterGroup = new(RouterGroup)
+var ApiRouterGroup = new(ApiGroup)

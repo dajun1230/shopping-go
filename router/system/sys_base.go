@@ -8,11 +8,11 @@ import (
 type BaseRouter struct {
 }
 
-func (s *BaseRouter) InitBaseRouter(Router *gin.RouterGroup) (R gin.IRoutes) {
-	api := api.ApiRouterGroup.System.BaseApi
+func (s *BaseRouter) InitBaseRouter(Router *gin.RouterGroup) {
+	baseApi := api.ApiRouterGroup.System.BaseApi
 	baseRouter := Router.Group("api")
 	{
-		baseRouter.POST("login", api.Login)
+		baseRouter.POST("login", baseApi.Login)
+		baseRouter.POST("captcha", baseApi.Captcha)
 	}
-	return baseRouter
 }

@@ -4,7 +4,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"shopping-go/global"
-	"shopping-go/middleware"
 	"shopping-go/router"
 )
 
@@ -27,9 +26,9 @@ func Routers() *gin.Engine {
 
 	// 私有路由，需要做鉴权处理
 	PrivateGroup := Router.Group(global.SHOP_CONFIG.System.RouterPrefix)
-	PrivateGroup.Use(middleware.JWTAuth())
+	//PrivateGroup.Use(middleware.JWTAuth())
 	{
-
+		systemRouter.InitUserRouter(PrivateGroup)
 	}
 
 	//Router.GET("/hello", func(c *gin.Context) {
