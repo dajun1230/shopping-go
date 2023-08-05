@@ -2,19 +2,19 @@ package config
 
 type Config struct {
 	// jwt
-	JWT JWT `mapStructure:"jwt" json:"jwt" yaml:"jwt"`
+	JWT JWT `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
 
 	// zap
-	Zap Zap `mapStructure:"zap" json:"zap" yaml:"zap"`
+	Zap Zap `mapstructure:"zap" json:"zap" yaml:"zap"`
 
 	// auto
-	AutoCode Autocode `mapStructure:"autocode" json:"autocode" yaml:"autocode"`
+	AutoCode Autocode `mapstructure:"autocode" json:"autocode" yaml:"autocode"`
 
 	// gorm
-	Mysql Mysql `mapStructure:"mysql" json:"mysql" yaml:"mysql"`
+	Mysql Mysql `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
 
 	// system
-	System System `mapStructure:"system" json:"system" yaml:"system"`
+	System System `mapstructure:"system" json:"system" yaml:"system"`
 
-	Captcha Captcha `mapStructure:"captcha" json:"captcha" yaml:"captcha"`
+	Captcha Captcha `mapstructure:"captcha" json:"captcha" yaml:"captcha"`
 }

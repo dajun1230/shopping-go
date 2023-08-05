@@ -3,13 +3,14 @@ package core
 import (
 	"flag"
 	"fmt"
-	"github.com/fsnotify/fsnotify"
-	"github.com/gin-gonic/gin"
-	"github.com/spf13/viper"
 	"os"
 	"path/filepath"
 	"shopping-go/core/internal"
 	"shopping-go/global"
+
+	"github.com/fsnotify/fsnotify"
+	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 )
 
 func Viper(path ...string) *viper.Viper {
@@ -44,6 +45,7 @@ func Viper(path ...string) *viper.Viper {
 		fmt.Printf("44您正在使用func Viper()传递的值,config的路径为%s\n", config)
 	}
 
+	// 在Viper库中，用于结构体字段映射的关键字是mapstructure.
 	v := viper.New()
 	v.SetConfigFile(config)
 	v.SetConfigType("yaml")
